@@ -12,13 +12,15 @@ export default function Document() {
         <meta property="og:url" content="https://gestaopluma.sejapluma.com/" />
         <meta property="og:title" content="GestãoPluma - Sistema Completo para Psicólogas" />
         <meta property="og:description" content="Sistema completo no Notion para psicólogas organizarem prontuários, planilha financeira, agenda, documentos e tudo que precisam para administrar a clínica com leveza ❤️" />
-        <meta property="og:image" content="https://gestaopluma.sejapluma.com/images/mock-hero.png" />
+        <meta property="og:image" content="https://gestaopluma.sejapluma.com/images/comp.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://gestaopluma.sejapluma.com/" />
         <meta property="twitter:title" content="GestãoPluma - Sistema Completo para Psicólogas" />
         <meta property="twitter:description" content="Sistema completo no Notion para psicólogas organizarem prontuários, planilha financeira, agenda, documentos e tudo que precisam para administrar a clínica com leveza ❤️" />
-        <meta property="twitter:image" content="https://gestaopluma.sejapluma.com/images/mock-hero.png" />
+        <meta property="twitter:image" content="https://gestaopluma.sejapluma.com/images/comp.png" />
       </Head>
       <body>
         <Main />
