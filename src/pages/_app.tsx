@@ -7,6 +7,7 @@ import * as ga from '../services/GoogleAnalytics';
 import * as fbPixel from '../services/MetaPixel';
 import { useRouter } from 'next/router';
 import { Instrument_Serif } from 'next/font/google';
+import Head from 'next/head';
 
 const instrumentSerif = Instrument_Serif({ 
   weight: ['400'],
@@ -38,6 +39,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <title>GestãoPluma - Sistema Completo para Psicólogas</title>
+      </Head>
       {/* Google Tag Manager */}
       <Script
         id="gtm-script"
