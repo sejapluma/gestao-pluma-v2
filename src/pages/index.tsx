@@ -19,9 +19,9 @@ const HomePage = () => {
     <main className="min-h-screen">
       <Hero />
       <FeatureSection />
-      <HighlightBar />
       <PainPoints />
       <SolutionBridge />
+      <HighlightBar />
       <ProductFeatures />
       <Benefits />
       <TargetAudience />

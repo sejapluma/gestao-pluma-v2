@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const FeatureSection = () => {
   return (
@@ -26,8 +27,14 @@ const FeatureSection = () => {
 
           {/* Coluna da imagem */}
           <div className="lg:w-1/2 relative">
-            <div className="relative w-full aspect-square max-w-lg mx-auto bg-gray-100 rounded-2xl">
-              {/* Placeholder para imagem */}
+            <div className="relative w-full aspect-square max-w-lg mx-auto">
+              <Image
+                src="/images/image-1.png"
+                alt="Interface do Gestão Pluma"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
           </div>
         </div>

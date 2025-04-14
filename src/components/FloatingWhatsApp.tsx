@@ -1,9 +1,15 @@
 import React from 'react';
+import * as ga from '../services/GoogleAnalytics';
+import * as fbPixel from '../services/MetaPixel';
 
 const FloatingWhatsApp = () => {
   const scrollToPricing = () => {
     const pricingSection = document.getElementById('pricing');
     pricingSection?.scrollIntoView({ behavior: 'smooth' });
+
+    // Tracking de eventos
+    ga.trackContact();
+    fbPixel.trackContact();
   };
 
   return (

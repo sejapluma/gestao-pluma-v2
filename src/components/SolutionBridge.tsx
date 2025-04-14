@@ -1,27 +1,27 @@
 import React from 'react';
-import Image from 'next/image';
+import { CalendarIcon, DocumentTextIcon, BanknotesIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/outline';
 
 const SolutionBridge = () => {
-  const benefits = [
+  const features = [
     {
       id: 'calendar',
       text: 'Controle agendamentos rapidamente, sincronizado com Google Agenda',
-      icon: '📅',
+      icon: CalendarIcon,
     },
     {
       id: 'records',
       text: 'Escreva prontuários de forma segura e organizada',
-      icon: '📋',
+      icon: DocumentTextIcon,
     },
     {
       id: 'finance',
       text: 'Controle finanças e pagamentos',
-      icon: '💰',
+      icon: BanknotesIcon,
     },
     {
       id: 'access',
       text: 'Acesse de qualquer lugar, pelo computador ou celular',
-      icon: '📱',
+      icon: DevicePhoneMobileIcon,
     },
   ];
 
@@ -34,31 +34,37 @@ const SolutionBridge = () => {
             mas por tudo que envolve administração e gestão.
           </p>
           
-          <p className="text-xl md:text-2xl text-gray-800 font-medium mb-8">
+          <p className="text-lg md:text-xl text-gray-600 mb-8">
             Agora imagine ter mais tempo pra você, pros estudos e pros seus pacientes, 
             simplificando a rotina com um sistema 100% adaptável pro seu jeito de fazer as coisas{' '}
             <span className="text-2xl">🌸</span>
           </p>
 
-          <p className="text-lg md:text-xl text-[#7959F7] font-semibold">
+          <p className="text-lg md:text-xl text-[#7959F7] font-bold">
             Com o Gestão Pluma, tudo fica no lugar certo, de forma segura e organizada, 
             no formato que mais faz sentido na sua rotina!
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-12">
-          {benefits.map((benefit) => (
-            <div
-              key={benefit.id}
-              className="flex items-center p-6 bg-white rounded-xl shadow-sm 
-                       hover:shadow-md transition-shadow border border-gray-100"
-            >
-              <span className="text-3xl mr-4" role="img" aria-label="ícone">
-                {benefit.icon}
-              </span>
-              <p className="text-lg text-gray-700">{benefit.text}</p>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={feature.id}
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 
+                         flex flex-col items-center text-center group"
+              >
+                <div className="w-16 h-16 rounded-xl bg-[#7959F7]/10 flex items-center justify-center mb-4
+                             group-hover:bg-[#7959F7]/20 transition-colors duration-300">
+                  <Icon className="w-8 h-8 text-[#7959F7]" />
+                </div>
+                <p className="text-gray-700">
+                  {feature.text}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="relative mt-16">

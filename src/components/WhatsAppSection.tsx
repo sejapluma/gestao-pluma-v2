@@ -11,14 +11,14 @@ const WhatsAppSection = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Contato
+            Fale com a gente!
           </h2>
           
           <button
             onClick={scrollToPricing}
             className="inline-flex items-center px-8 py-4 bg-[#25D366] hover:bg-[#20BD5A] 
-                     text-white font-semibold rounded-full shadow-lg hover:shadow-xl 
-                     transform hover:-translate-y-1 transition-all duration-200 gap-3"
+                     text-white text-xl font-semibold rounded-lg shadow-lg hover:shadow-xl 
+                     transition-all duration-200 gap-3"
           >
             <svg
               className="w-6 h-6"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   const scrollToPricing = () => {
@@ -33,6 +34,17 @@ const Hero = () => {
           >
             Começar agora
           </button>
+        </div>
+
+        <div className="mt-16 relative">
+          <Image
+            src="/images/mock-hero.png"
+            alt="Mockup do Gestão Pluma"
+            width={1200}
+            height={800}
+            className="w-full h-auto rounded-xl"
+            priority
+          />
         </div>
       </div>
     </section>
