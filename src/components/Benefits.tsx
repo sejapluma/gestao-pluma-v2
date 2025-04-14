@@ -104,7 +104,7 @@ const Benefits = () => {
           <button className="bg-[#7959F7] text-white px-8 py-4 rounded-lg text-lg font-semibold 
             hover:bg-[#6445e0] transition-all duration-300 shadow-lg 
             hover:shadow-[#7959F7]/30">
-            Quero começar agora
+            Quero organizar minha clínica
           </button>
         </div>
       </div>

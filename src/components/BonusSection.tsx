@@ -90,7 +90,7 @@ const BonusSection = () => {
           <button className="bg-gradient-to-r from-[#7959F7] to-[#6445e0] text-white px-8 py-4 rounded-lg 
             text-lg font-semibold hover:shadow-xl transition-all duration-300 
             hover:shadow-[#7959F7]/30 transform hover:-translate-y-1">
-            Quero todos os bônus
+            Quero organizar minha clínica
           </button>
         </div>
       </div>
