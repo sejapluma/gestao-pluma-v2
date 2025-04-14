@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     // Inicialização dos serviços
     ga.initGA();
-    fbPixel.initFacebookPixel();
+    fbPixel.initializePixel();
 
     // Tracking de página
     const handleRouteChange = (url: string) => {
