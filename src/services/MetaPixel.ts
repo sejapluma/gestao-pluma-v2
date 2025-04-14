@@ -6,13 +6,13 @@ declare global {
 
 export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
-export const initFacebookPixel = () => {
+export const initializePixel = () => {
   if (typeof window === 'undefined') return;
 
   // Inicialização do Pixel
-  !(function (f: any, b: any, e: any, v: any, n: any, t: any, s: any) {
+  !(function(f: any, b: any, e: any, v: any, n: any, t: any, s: any) {
     if (f.fbq) return;
-    n = f.fbq = function () {
+    n = f.fbq = function() {
       n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
     };
     if (!f._fbq) f._fbq = n;
@@ -32,7 +32,8 @@ export const initFacebookPixel = () => {
     'https://connect.facebook.net/en_US/fbevents.js'
   );
 
-  window.fbq('init', FB_PIXEL_ID);
+  fbq('init', FB_PIXEL_ID);
+  fbq('track', 'PageView');
 };
 
 // Eventos
