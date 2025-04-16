@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@/components/ui/button';
 
 const AboutSection = () => {
   const socialLinks = [
@@ -21,6 +22,10 @@ const AboutSection = () => {
       label: 'WhatsApp da Pluma'
     }
   ];
+
+  const handleWhatsAppClick = () => {
+    window.open('https://chat.whatsapp.com/InGI2c8jH8928jRjcjyPJ1', '_blank');
+  };
 
   return (
     <section className="py-24 bg-white">
@@ -72,6 +77,15 @@ const AboutSection = () => {
             </a>
           ))}
         </div>
+
+        <Button
+          onClick={handleWhatsAppClick}
+          className="mt-8 w-full sm:w-auto"
+          variant="primary"
+          size="lg"
+        >
+          Entrar no grupo do WhatsApp
+        </Button>
       </div>
     </section>
   );

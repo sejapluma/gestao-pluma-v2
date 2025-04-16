@@ -3,18 +3,18 @@ import * as ga from '../services/GoogleAnalytics';
 import * as fbPixel from '../services/MetaPixel';
 
 const FloatingWhatsApp = () => {
-  const scrollToPricing = () => {
-    const pricingSection = document.getElementById('pricing');
-    pricingSection?.scrollIntoView({ behavior: 'smooth' });
-
+  const handleClick = () => {
     // Tracking de eventos
     ga.trackContact();
     fbPixel.trackContact();
+    
+    // Redirecionar para o grupo do WhatsApp
+    window.open('https://chat.whatsapp.com/InGI2c8jH8928jRjcjyPJ1', '_blank');
   };
 
   return (
     <button
-      onClick={scrollToPricing}
+      onClick={handleClick}
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3 rounded-full 
                 shadow-lg hover:bg-[#20BD5A] transform hover:scale-110 transition-all duration-200
                 flex items-center justify-center"
