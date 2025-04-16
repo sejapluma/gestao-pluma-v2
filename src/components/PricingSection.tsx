@@ -6,10 +6,8 @@ import {
   CreditCardIcon,
   LockClosedIcon,
 } from '@heroicons/react/24/outline';
-import { trackBeginCheckout } from '../services/GoogleAnalytics';
-import { trackInitiateCheckout } from '../services/MetaPixel';
-import { ga } from '../services/GoogleAnalytics';
-import { fbPixel } from '../services/MetaPixel';
+import { trackBeginCheckout, trackContact } from '../services/GoogleAnalytics';
+import { trackInitiateCheckout, trackContact as trackPixelContact } from '../services/MetaPixel';
 
 const PricingSection = () => {
   const benefits = [
@@ -37,8 +35,8 @@ const PricingSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    ga.trackContact();
-    fbPixel.trackContact();
+    trackContact();
+    trackPixelContact();
     window.location.href = 'https://chat.whatsapp.com/InGI2c8jH8928jRjcjyPJ1';
   };
 

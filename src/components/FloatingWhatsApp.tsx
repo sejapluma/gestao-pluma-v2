@@ -1,12 +1,12 @@
 import React from 'react';
-import * as ga from '../services/GoogleAnalytics';
-import * as fbPixel from '../services/MetaPixel';
+import { trackContact } from '../services/GoogleAnalytics';
+import { trackContact as trackPixelContact } from '../services/MetaPixel';
 
 const FloatingWhatsApp = () => {
   const handleClick = () => {
     // Tracking de eventos
-    ga.trackContact();
-    fbPixel.trackContact();
+    trackContact();
+    trackPixelContact();
     window.location.href = 'https://chat.whatsapp.com/InGI2c8jH8928jRjcjyPJ1';
   };
 
