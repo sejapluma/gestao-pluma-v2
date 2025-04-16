@@ -34,6 +34,11 @@ const BonusSection = () => {
     },
   ];
 
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    pricingSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Gradiente de fundo especial */}
@@ -87,7 +92,9 @@ const BonusSection = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="bg-gradient-to-r from-[#7959F7] to-[#6445e0] text-white px-8 py-4 rounded-lg 
+          <button 
+            onClick={scrollToPricing}
+            className="bg-gradient-to-r from-[#7959F7] to-[#6445e0] text-white px-8 py-4 rounded-lg 
             text-lg font-semibold hover:shadow-xl transition-all duration-300 
             hover:shadow-[#7959F7]/30 transform hover:-translate-y-1">
             Quero organizar minha clínica

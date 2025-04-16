@@ -7,21 +7,18 @@ const FloatingWhatsApp = () => {
     // Tracking de eventos
     ga.trackContact();
     fbPixel.trackContact();
-    
-    // Redirecionar para o grupo do WhatsApp
-    window.open('https://chat.whatsapp.com/InGI2c8jH8928jRjcjyPJ1', '_blank');
+    window.location.href = 'https://chat.whatsapp.com/InGI2c8jH8928jRjcjyPJ1';
   };
 
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3 rounded-full 
-                shadow-lg hover:bg-[#20BD5A] transform hover:scale-110 transition-all duration-200
-                flex items-center justify-center"
-      aria-label="Falar no WhatsApp"
+      className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg
+                hover:bg-[#20BD5A] transform hover:scale-110 transition-all duration-200
+                flex items-center justify-center z-50"
     >
       <svg
-        className="w-5 h-5"
+        className="w-6 h-6"
         fill="currentColor"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
