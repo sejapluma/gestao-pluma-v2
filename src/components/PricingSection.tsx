@@ -108,22 +108,30 @@ const PricingSection = () => {
                     Quero organizar minha clínica
                   </button>
                 </div>
-              </div>
 
-              {/* Footer com selos de segurança */}
-              <div className="mt-8 bg-gray-50 p-3 flex items-center justify-center gap-4 border-t border-gray-100">
-                <div className="flex items-center gap-1 text-gray-600">
-                  <ShieldCheckIcon className="w-5 h-5" />
-                  <span className="text-sm">Pagamento Seguro</span>
-                </div>
-                <div className="flex items-center gap-1 text-gray-600">
-                  <LockClosedIcon className="w-5 h-5" />
-                  <span className="text-sm">LGPD</span>
+                {/* Footer com selos de segurança */}
+                <div className="mt-8 bg-gray-50 p-3 flex items-center justify-center gap-4 border-t border-gray-100">
+                  <div className="flex items-center gap-1 text-gray-600">
+                    <ShieldCheckIcon className="w-5 h-5" />
+                    <span className="text-sm">Pagamento Seguro</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-gray-600">
+                    <LockClosedIcon className="w-5 h-5" />
+                    <span className="text-sm">LGPD</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Texto informativo separado */}
+      <div className="max-w-xl mx-auto text-center mt-16 px-4">
+        <p className="text-gray-600">
+          Ao clicar no botão acima,<br />
+          você será direcionada para o checkout seguro da nossa plataforma parceira Ticto.
+        </p>
       </div>
     </section>
   );
