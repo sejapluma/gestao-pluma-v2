@@ -74,10 +74,10 @@ const PricingSection = () => {
                     Oferta Especial
                   </span>
                   <div className="flex flex-col items-center justify-center space-y-1">
-                    <span className="text-gray-500 line-through text-xl">De R$347</span>
+                    <span className="text-gray-500 line-through text-xl">De R$197</span>
                     <div className="flex items-baseline justify-center">
                       <span className="text-gray-900 font-bold text-2xl">por</span>
-                      <span className="text-[#7959F7] font-bold text-5xl ml-2">R$97</span>
+                      <span className="text-[#7959F7] font-bold text-5xl ml-2">R$27</span>
                     </div>
                   </div>
                 </div>
